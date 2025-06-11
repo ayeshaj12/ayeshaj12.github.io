@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayesha Jamal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<script>
+    const footer = document.getElementById('footer');
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            footer.classList.add('visible');
+          }
+        });
+      },
+      {
+        threshold: 0.1
+      }
+    );
+  
+    observer.observe(footer);
+  </script>  
+<body>
+  <header id="name">
+    <h1>AYESHA JAMAL</h1>
+
+    
+  </header>
+  <button id="buttonOpen" onclick="w3_open()">☰</button>
+
+  <!-- sidebar -->
+  <div id="sideBar" class="w3-sidebar w3-bar-block" style="display:none; width:250px; background-color:#f1f1f1; position:fixed; height:100%;">
+    <button id="buttonClose" onclick="w3_close()" class="w3-bar-item w3-button">X</button>
+    <a href="#aboutme" class= "w3-bar-item w3-button" onclick="scrollToSection(id)">Introduction</a>
+    <a href="#experience" class="w3-bar-item w3-button" onclick="scrollToSection(id)">Experience</a>
+    <a href="#plan" class= "w3-bar-item w3-button" onclick="scrollToSection(id)">Resume</a>
+    <a href="mailto:jamalayesha000@gmail.com" class="w3-bar-item w3-button">Contact</a>
+  </div>
+
+  <div id="mainContent">
+    <div class="marquee-container">
+    <div class="marquee">
+        <div class="track">
+          <img id="logo1" src="logo1.png" alt="Logo 1">
+          <img id="logo2" src="logo2.png" alt="Logo 2">
+          <img id="logo3" src="logo3.png" alt="Logo 3">
+          <img id="logo4" src="logo4.png" alt="Logo 4">
+          <img id="logo5" src="logo5.png" alt="Logo 5">
+          <img id="logo6" src="logo6.png" alt="Logo 6">
+          <img id="logo1" src="logo1.png" alt="Logo 1">
+          <img id="logo2" src="logo2.png" alt="Logo 2">
+          <img id="logo3" src="logo3.png" alt="Logo 3">
+          <img id="logo4" src="logo4.png" alt="Logo 4">
+          <img id="logo5" src="logo5.png" alt="Logo 5">
+          <img id="logo6" src="logo6.png" alt="Logo 6">
+        </div>
+      </div>
+    </div>
+    <section class="forsamesize">
+    <section id="aboutme" >
+        <h2>WHO AM I?</h2>
+    </section>
+    <section id="short-intro">
+    <p>I am Ayesha Jamal, a rising junior at Queens College with a passion for computer science and technology. As an enthusiastic learner in this field, I am actively engaged in exploring the latest advancements in software development, algorithms, and data structures.</p>
+    <p>At Queens College, my coursework and projects have provided me with a solid foundation in programming languages and algorithms. I thrive in visually transforming ideas and enjoy the process of designing and building user-centric applications that are both functional and aesthetically pleasing.</p>
+    <p>This website is a reflection of my journey in computer science, showcasing my projects and the skills I'm developing. Feel free to navigate through the website to learn more about me and my work. Thank you for visiting!</p>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="wrapper style2 fade-up">
+    <div class="inner">
+      <h2>Personal Experience</h2>
+      <div class="Experience">
+        <section>
+            <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+              </svg>
+            <h3>Machine Learning Intern / Software Engineering Intern @ Permenance</h3>
+            </div>
+            <p>Designed and tested optimized prompts to improve the performance of LLMs for python code generation using MyOpenAI API, experimented with parameters to understand the behaviors.</p>
+            <p>Analyzed patterns of safe and unsafe code and trained the ML classifier to improve its accuracy.</p>
+            <p>Investigated the different Hallucinations Mitigations Techniques in LLMs.</p>
+        </section>
+        <section>
+            <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
+                <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
+            </svg>
+          <h3>Global Technology Service Management Intern @ Barclays</h3>
+        </div>
+          <p>Engaged in software development using C++ to architect and implement an efficient system
+            monitoring solution. This software effectively tracked various systems' activities throughout the day,
+            culminating in generating comprehensive daily reports.</p>
+            <p>Operated within a dynamic and intricate environment, fostering robust team collaboration and
+            adaptability</p>
+            <p>Crafted a compelling presentation for the department head, effectively conveying the project's
+            significance and functionality.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan" class="resume">
+    <div class="link-row-container">
+    <div class="inner link-row">
+        <a id="Resume" href="./resume.pdf" target="_blank" class= "w3-bar-item w3-button"> Resume</a>
+        <a id="LINKEDIN " href="https://www.linkedin.com/in/ayesha-j-28235a1b6/" target="_blank">Linked-In</a>
+    </div>
+</div>
+  </section>
+</section>
+  <script>
+    function w3_open() {
+      document.getElementById("sideBar").style.display="block";
+      document.getElementById("mainContent").classList.add("shifted");
+    }
+
+    function w3_close() {
+      document.getElementById("sideBar").style.display = "none";
+      document.getElementById("mainContent").classList.remove("shifted");
+    }
+    function scrollToSection(id){
+        w3_close();
+        const section= document.getElementById(id);
+        element.scrollIntoView({behaviour: "smooth"});        
+    }
+  </script>
+
+<footer id="footer">
+    <h4> &copy 2025 - designed and built by AYESHA JAMAL </h4>
+    <h4>            All right reserved                  </h4>
+</footer>
+</div>
+</body>
+</html>
